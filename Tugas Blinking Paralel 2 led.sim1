@@ -1,0 +1,47 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="Nano-2" mainComp="false" Show_id="true" Show_Val="false" Pos="-852,-216" rotation="0" hflip="1" vflip="1" label="Nano-2" idLabPos="17.4862,-14.4044" labelrot="0" valLabPos="-16,20" valLabRot="0">
+<mainCompProps MainCompId="m328 TQFP-269" Frequency="16 MHz" Program="../../../../AppData/Local/arduino/sketches/7D5DE1C1F00C314E3237898BD9AFF5FC/sketch_feb23a.ino.with_bootloader.hex" Auto_Load="false" saveEepr="true" MainMcu="true" SerialMon="-1" />
+</item>
+
+<item itemtype="Led" CircId="Led-3" mainComp="false" Show_id="false" Show_Val="false" Pos="-732,-84" rotation="0" hflip="1" vflip="1" label="Led-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="White" Grounded="false" Threshold="4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-6" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-676,-124" rotation="0" hflip="1" vflip="1" label="Resistor-6" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-7" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-676,-84" rotation="0" hflip="1" vflip="1" label="Resistor-7" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Ground" CircId="Ground-9" mainComp="false" Show_id="false" Show_Val="false" Pos="-648,-52" rotation="0" hflip="1" vflip="1" label="Ground-9" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="LAnalizer" CircId="LAnalizer-11" mainComp="false" Show_id="false" Show_Val="false" Pos="-512,-136" rotation="0" hflip="1" vflip="1" label="LAnalizer-11" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="100000" connectGnd="true" InputImped="10 MΩ" TimDiv="1000000000000" TimPos="0" VolDiv="0.15" Tunnels=",,,,,,,," Trigger="9" TimeStep="1000 _ps" AutoExport="false" TresholdR="2.5 V" Bus="false,false,false,false,false,false,false,false," TresholdF="2.5 V" />
+
+<item itemtype="Led" CircId="Led-4" mainComp="false" Show_id="false" Show_Val="false" Pos="-732,-124" rotation="0" hflip="1" vflip="1" label="Led-4" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Node" CircId="Node-10" mainComp="false" Pos="-648,-84" />
+
+<item itemtype="Node" CircId="Node-13" mainComp="false" Pos="-748,-84" />
+
+<item itemtype="Node" CircId="Node-12" mainComp="false" Pos="-748,-124" />
+
+<item itemtype="Connector" uid="Connector-8" startpinid="Resistor-7-lPin" endpinid="Led-3-rPin" pointList="-692,-84,-716,-84" />
+
+<item itemtype="Connector" uid="Connector-17" startpinid="Ground-9-Gnd" endpinid="Node-10-1" pointList="-648,-68,-648,-84" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="Resistor-6-rPin" endpinid="Node-10-0" pointList="-660,-124,-648,-124,-648,-84" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="Node-10-2" endpinid="Resistor-7-rPin" pointList="-648,-84,-660,-84" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="LAnalizer-11-Pin1" endpinid="Node-13-1" pointList="-600,-184,-624,-184,-624,-44,-748,-44,-748,-84" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="Led-3-lPin" endpinid="Node-13-0" pointList="-748,-84,-748,-84" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="Node-13-2" endpinid="Nano-2-13" pointList="-748,-84,-796,-84,-796,-88" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="Node-12-2" endpinid="Nano-2-A2" pointList="-748,-124,-796,-124,-796,-128" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="Led-4-lPin" endpinid="Node-12-0" pointList="-748,-124,-748,-124" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="LAnalizer-11-Pin0" endpinid="Node-12-1" pointList="-600,-200,-748,-200,-748,-124" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="Resistor-6-lPin" endpinid="Led-4-rPin" pointList="-692,-124,-716,-124" />
+
+</circuit>
